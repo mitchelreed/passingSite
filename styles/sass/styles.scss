@@ -34,6 +34,7 @@ header {
 	justify-content: center;
 	flex-direction: column;
 	position: relative;
+	scroll-snap-align: center;
 }
 
 .headerContents {
@@ -159,7 +160,6 @@ iframe {
 }
 
 aside {
-
 	ul {
 		padding: 0;
 	}
@@ -202,8 +202,6 @@ article p:first-of-type {
 	margin: 0 auto;
 	@include paragraph(1.6rem);
 }
-
-
 
 .emailSectionContainer {
 	display: flex;
@@ -352,8 +350,6 @@ textarea {
 	clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
 }
 
-
-
 footer {
 	height: 40px;
 	background: white;
@@ -417,7 +413,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-
 	.footerImage img {
 		width: 290px;
 		height: 150px;
@@ -427,14 +422,13 @@ footer {
 		bottom: 20px;
 		clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
 	}
-	
 
 	.information {
 		min-height: 800px;
 	}
 
 	header {
-		min-height: 900px;
+		min-height: 750px;
 		align-items: center;
 	}
 
@@ -443,7 +437,7 @@ footer {
 	}
 
 	.iFrameContainer {
-		width: 50%;
+		width: 60%;
 	}
 
 	.navItemContainer {
@@ -454,7 +448,7 @@ footer {
 		height: 110px;
 		z-index: 10;
 		height: 200px;
-		background:	rgba(255,255,255, 0.85);
+		background: rgba(255, 255, 255, 0.85);
 		width: 100px;
 		border-radius: 5px;
 	}
@@ -513,8 +507,13 @@ footer {
 			}
 		}
 	}
+}
 
-
+@media (max-width: 450px) {
+	header {
+		min-height: 850px;
+		align-items: center;
+	}
 }
 
 @media (max-width: 400px) {
@@ -526,18 +525,18 @@ footer {
 		color: #595b53;
 		box-shadow: 10px 18px 30px -16px rgba(0, 0, 0, 0.25);
 	}
-	
+
 	.textContent {
 		width: 250px;
 		display: flex;
 		align-items: center;
-	
+
 		p {
 			@include paragraph(1.8rem);
 			padding-bottom: 20px;
 		}
 	}
-	
+
 	input[type="text"],
 	input[type="email"] {
 		margin-bottom: 10px;
@@ -576,7 +575,11 @@ footer {
 		bottom: 20px;
 		clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
 	}
-	
+}
 
-	
+@media (max-width: 450px) {
+	header {
+		min-height: 900px;
+		align-items: center;
+	}
 }

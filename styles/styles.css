@@ -407,6 +407,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .headerContents {
@@ -939,7 +940,7 @@ footer p {
     min-height: 800px;
   }
   header {
-    min-height: 900px;
+    min-height: 750px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -948,7 +949,7 @@ footer p {
     min-height: 600px;
   }
   .iFrameContainer {
-    width: 50%;
+    width: 60%;
   }
   .navItemContainer {
     -webkit-box-orient: vertical;
@@ -1035,6 +1036,15 @@ footer p {
   }
 }
 
+@media (max-width: 450px) {
+  header {
+    min-height: 850px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 400px) {
   .formContainer {
     width: 250px;
@@ -1100,5 +1110,14 @@ footer p {
     bottom: 20px;
     -webkit-clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
             clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    min-height: 900px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
