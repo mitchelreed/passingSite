@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+
+	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="https://kit.fontawesome.com/69b2fa3252.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<span id="film" class="sr-only"></span>
+	<a href="#mainContent" class="skipToMainContent sr-only">
+		Skip To Content
+	</a>
+	<header>
+
+		<nav class="navBar">
+			<i class="far fa-compass" id="icon"><a href="" id="iconLink" aria-label="navigation"></a></i>
+			<ul class="navItemContainer visible" id="navItemContainer">
+				<li class="listItem"><a href="#information">Info</a></li>
+				<li class="listItem"><a href="#email">Email</a></li>
+				<li class="listItem"><a href="#film">Film</a></li>
+			</ul>
+		</nav>
+		<div class="headerContents">
+			<div class="titleContainer" id="titleContainer">
+				<h1 id="filmTitle">Passing</h1>
+				<p id="mainContent"><span class="sr-only">Passing</span>was created by Lucah Rosenberg Lee & J. Mitchel Reed;
+					this film taught us lessons, blossomed life long
+					friendships and has been shown to thousands of people around the world. Our aim from the beginning was to
+					start
+					conversations from a place of compassion and love. More than six years later, that goal is the same. No matter
+					who you are or what life brings along the way, it’s our human connection and mutual experiences of change,
+					growth and self discovery that tie us together. This film is meant to ask key questions about what it means to
+					break out of our own mental boundaries of who we think we are, who we think we should be and who we will be in
+					our future.</p>
+			</div>
+			<div class="iFrameContainer" id="containerID">
+				<div class="video">
+					<iframe aria-label="Passing Documentary Film" eager rel="preload" as="video"
+						src="https://player.vimeo.com/video/119696471" frameborder="0"
+						allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="information" class="information">
+		<div class="informationContainer">
+			<aside class="links">
+				<ul>
+					<li><a target="_blank"
+							href="https://www.oprahmag.com/entertainment/tv-movies/g28088682/best-lgbtq-movies-to-watch-now/?slide=15">Passing
+							in Oprah Magazine</a></li>
+
+					<li><a target="_blank"
+							href="https://www.thestar.com/news/canada/2017/06/25/as-the-queer-community-spreads-out-can-the-gay-village-remain-vital.html">Lucah
+							& The Toronto Star</a></li>
+
+					<li><a target="_blank" href="https://blacktransmedia.wixsite.com/blacktransmedia">Black Trans Media | Sasha
+							Alexander</a></li>
+
+					<li><a target="_blank" href="https://www.jahgrey.com/jahgrey">Jah Grey</a></li>
+
+					<li><a target="_blank" href="https://nsi-canada.ca/2016/11/passing/">Passing in the National Screen
+							Institute</a></li>
+
+					<li><a target="_blank" href="https://vimeo.com/ondemand/expandinggender/152502696">Passing in "Expanding
+							Gender: Youth Out Front" a Vimeo Staff Pick</a></li>
+
+					<li><a target="_blank"
+							href="https://www.amazon.com/How-Meditate-Self-Discovery-Lawrence-LeShan/dp/0316880620">A Wonderful Book
+							On How To Meditate</a></li>
+
+					<li><a target="_blank" href="https://www.wakingup.com/">"Waking Up" App – Free Meditation Guidance</a></li>
+				</ul>
+			</aside>
+			<article>
+				<h2>More Information</h2>
+				<p>
+					Here are some links related to the documentary if you’re interested in exploring further. “Expanding Gender:
+					Youth Out Front” is meant to be an educational collection of four documentaries of which Passing is one, its
+					for rent on vimeo. There are also links to two mediation resources we’ve found helpful over the years.
+				</p>
+				<p class="asterisk">* none of these are affiliate links</p>
+			</article>
+		</div>
+	</section>
+	<section id="email" class="email">
+	<div class="emailSectionContainer">
+	<div class="textContent">
+		<p>
+			Wether you'd like to get in touch about screening the film, presentations, or you just want to drop us a line – we'd love to hear from you.
+		</p>
+			
+	</div>
+			<div class="formContainer">
+				
+				<form action="https://formspree.io/f/xyybawja" method="POST" id="myForm">
+					<div class="inputGroup">
+						<label for="name" class="formFocus">Name</label>
+						<input type="text" name="name" id="name" class="formFocus" required>
+						<label for="email" class="emailLabel" class="formFocus">Email</label>
+						<input type="email" id="email" name="email" class="formFocus" required>
+					</div>
+					<div class="messageContainer">
+						<label for="message" class="formFocus">Message</label>
+						<textarea name="message" id="message" class="formFocus" required></textarea>
+					</div>
+					<button type="submit">submit</button>
+				</form>
+			</div>
+			<div id="status"></div>
+			
+	</div>
+	</section>
+	<aside class="imageAside">
+		<div class="footerImage"><img src="./Assets/passingRegent.jpg" alt=""></div>
+	</aside>
+	<footer>
+		<p> © Natural Element</p>
+	</footer>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>
