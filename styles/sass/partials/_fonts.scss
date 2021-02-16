@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&family=DM+Serif+Display&family=Merriweather:wght@300;700&family=Montserrat:wght@300&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600;700&family=DM+Serif+Display&family=Merriweather:wght@300;700&family=Montserrat:wght@300&family=Roboto&display=swap");
 
 @mixin heading($fontSize: 5rem, $fontWeight: 700, $color: black) {
-	font-family: 'Cormorant Garamond';
+	font-family: "Cormorant Garamond";
 	font-weight: $fontWeight;
 	font-size: $fontSize;
 	color: $color;
 }
 
 @mixin paragraph($fontSize: 1.8rem, $fontWeight: 400, $color: black) {
-	font-family: 'Robotto';
+	font-family: "Robotto";
 	font-size: $fontSize;
 	font-weight: $fontWeight;
 	color: $color;

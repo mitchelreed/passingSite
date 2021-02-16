@@ -10,15 +10,14 @@
 	z-index: 10;
 	top: -10px;
 	position: fixed;
-	
+
 	// compass/menu icon
 	i {
 		font-size: 3.9rem;
 		cursor: pointer;
-		transition: transform 1s ease-in-out, opacity 4s ease, color .4s ease;
+		transition: transform 1s ease-in-out, opacity 4s ease, color 0.4s ease;
 		opacity: 0;
 		color: black;
-		
 	}
 }
 
