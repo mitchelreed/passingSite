@@ -1038,7 +1038,7 @@ footer p {
 
 @media (max-width: 450px) {
   header {
-    min-height: 850px;
+    min-height: 900px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1046,6 +1046,9 @@ footer p {
 }
 
 @media (max-width: 400px) {
+  .information h2 {
+    font-size: 3rem;
+  }
   .formContainer {
     width: 250px;
     background: #e9ddc4;
@@ -1110,14 +1113,5 @@ footer p {
     bottom: 20px;
     -webkit-clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
             clip-path: polygon(100% 0, 13% 4%, 0 7%, 3% 98%, 73% 96%, 98% 93%, 99% 49%);
-  }
-}
-
-@media (max-width: 450px) {
-  header {
-    min-height: 900px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
