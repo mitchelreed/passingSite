@@ -6,6 +6,9 @@ $green: #86a14b;
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	overflow: scroll;
 }
 
 body {
@@ -78,10 +81,6 @@ p {
 	@include paragraph();
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 // set transform to inital values that move to "softLanding" on load
 .iFrameContainer {
 	width: calc(min(45vw, 75%));
@@ -132,6 +131,7 @@ iframe {
 	max-width: 1300px;
 	width: 90%;
 	margin: 0 auto;
+	scroll-snap-align: center;
 }
 
 .informationContainer {
@@ -201,6 +201,7 @@ article p:first-of-type {
 	width: 90%;
 	margin: 0 auto;
 	@include paragraph(1.6rem);
+	scroll-snap-align: center;
 }
 
 .emailSectionContainer {
@@ -214,7 +215,7 @@ article p:first-of-type {
 // form
 .formContainer {
 	width: 400px;
-	background: #e9ddc4;
+	background: whitesmoke;
 	border-radius: 10px;
 	padding: 20px;
 	color: #595b53;
@@ -249,7 +250,7 @@ button {
 	outline: none;
 	@include paragraph(1.9rem);
 	border-radius: 6px;
-	background: #b4d55a;
+	background: white;
 	cursor: pointer;
 	color: #595b53;
 }
