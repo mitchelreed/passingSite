@@ -53,7 +53,7 @@ app.menuRevealAccessible = () => {
 }
 
 
-//************* this is modified code supplied from https://formspree.io/forms/xyybawja/integration who supply free accounts, for free form submissions. I stumbled across it via a youtube video and thought it would be fun to explore, so I did************* 
+//************* modified code supplied from https://formspree.io/forms/xyybawja/integration ************* 
 app.formSubmission = () => {
 
   window.addEventListener("DOMContentLoaded", function() {
